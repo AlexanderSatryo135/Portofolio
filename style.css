@@ -1,0 +1,472 @@
+/* ==========================================================================
+   1. Basic Reset & Global Styles
+   ========================================================================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f4f7f5;
+  color: #333;
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3 {
+  color: #2c3e50;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+h2 {
+  font-size: 2.2rem;
+}
+h3 {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+/* ==========================================================================
+   2. Layout & Utilities
+   ========================================================================== */
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #3498db;
+  color: #fff !important;
+  padding: 0.75rem 1.5rem;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  margin-top: 1rem;
+}
+.btn:hover {
+  background-color: #2980b9;
+}
+
+/* ==========================================================================
+   3. Header & Navigation
+   ========================================================================== */
+header {
+  padding: 1.5rem 0;
+  border-bottom: 1px solid #ddd;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-decoration: none;
+  color: #3498db;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+.nav-links a:hover {
+  color: #3498db;
+}
+
+/* Styling untuk About Me Section dengan Foto */
+.about-content {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.profile-photo {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.about-text h2 {
+  margin-top: 0;
+}
+
+/* ==========================================================================
+   4. Main Content Sections (Hero, CV, Skills)
+   ========================================================================== */
+main section {
+  padding: 4rem 0;
+}
+/* --- Hero Section --- */
+#hero {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.hero-text {
+  max-width: 60%;
+  text-align: justify;
+}
+
+.hero-text p {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+.hero-image img {
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+.cv-section {
+  background-color: #fff;
+  padding: 3rem;
+  margin-bottom: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+.cv-section h2 {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: #3498db;
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+}
+
+.cv-entry {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  padding-bottom: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid #eee;
+}
+.cv-entry:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.experience-logo {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  border-radius: 4px;
+  flex-shrink: 0;
+  margin-top: 5px;
+}
+.cv-entry-details {
+  flex-grow: 1;
+  width: 100%;
+}
+.cv-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  width: 100%;
+  margin-bottom: 0.25rem;
+}
+.cv-main-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #2c3e50;
+}
+.cv-sub-title {
+  font-size: 1rem;
+  font-weight: 500;
+}
+.cv-location,
+.cv-dates {
+  font-size: 0.9rem;
+  color: #555;
+  flex-shrink: 0;
+  padding-left: 1rem;
+}
+.cv-entry-details ul {
+  padding-left: 20px;
+  margin-top: 1rem;
+  color: #333;
+}
+.cv-entry-details ul li {
+  margin-bottom: 0.5rem;
+  text-align: justify;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+.skill-tag {
+  background-color: #eaf2f8;
+  color: #3498db;
+  padding: 0.4rem 1rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+/* ==========================================================================
+   5. Projects Carousel Section
+   ========================================================================== */
+#projects h2 {
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+
+.project-carousel {
+  width: 100%;
+  padding: 1rem 0 3rem 0;
+}
+
+.project-carousel .swiper-slide {
+  height: auto;
+  display: flex;
+  justify-content: center;
+  opacity: 0.5;
+  filter: blur(4px);
+  transform: scale(0.9);
+  transition: transform 0.4s ease, opacity 0.4s ease, filter 0.4s ease;
+}
+
+.project-carousel .swiper-slide-active {
+  opacity: 1;
+  filter: blur(0);
+  transform: scale(1);
+}
+
+.project-card {
+  width: 100%;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  text-align: justify;
+}
+.project-card:hover {
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+.project-card img {
+  width: 100%;
+  height: 160px; /* Memberi tinggi tetap agar kartu seragam */
+  object-fit: cover;
+}
+.project-card h3,
+.project-card p {
+  padding: 0 1.5rem;
+}
+.project-card h3 {
+  padding-top: 1.5rem;
+}
+.project-card p {
+  flex-grow: 1; /* Mendorong tombol ke bawah */
+}
+.project-card .btn {
+  margin: 1rem 1.5rem 1.5rem;
+  align-self: flex-start;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #3498db;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  top: 50%;
+  transform: translateY(-50%);
+}
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.swiper-pagination-bullet {
+  background-color: #3498db;
+  width: 10px;
+  height: 10px;
+}
+.swiper-pagination-bullet-active {
+  background-color: #2c3e50;
+}
+
+/* ==========================================================================
+   6. Footer Section
+   ========================================================================== */
+footer {
+  background-color: #2c3e50;
+  color: #ecf0f1;
+  text-align: center;
+  padding: 3rem 0;
+}
+footer h2 {
+  color: #fff;
+}
+footer p {
+  color: #bdc3c7;
+}
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+.social-links a {
+  text-decoration: none;
+  font-size: 1.8rem;
+  color: #ecf0f1;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+.social-links a:hover {
+  color: #3498db;
+  transform: translateY(-3px);
+}
+.copyright {
+  font-size: 0.9rem;
+  margin-top: 2rem;
+  color: #7f8c8d;
+}
+
+/* ==========================================================================
+   7. Media Queries for Responsiveness
+   ========================================================================== */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  #hero {
+    min-height: 60vh;
+    padding: 2rem 0;
+  }
+
+  main section {
+    padding: 3rem 0;
+  }
+
+  .cv-section {
+    padding: 1.5rem;
+  }
+
+  .cv-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.2rem;
+  }
+
+  .cv-location,
+  .cv-dates {
+    padding-left: 0;
+  }
+}
+
+.project-card-buttons {
+  display: flex;
+  gap: 0.75rem;
+  padding: 0 1.5rem 1.5rem;
+  margin-top: auto;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0;
+}
+
+.project-card .btn {
+  margin: 0;
+}
+
+.project-card p {
+  flex-grow: 1;
+}
+
+/* MOBILE */
+
+/* --- Styling untuk Menu Hamburger --- */
+.hamburger-button {
+  display: none; /* Sembunyikan di desktop */
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: #2c3e50;
+  cursor: pointer;
+  z-index: 1001; /* Pastikan di atas elemen lain */
+}
+
+/* Penyesuaian untuk menu mobile */
+@media (max-width: 768px) {
+  .hamburger-button {
+    display: block; /* Tampilkan di mobile */
+  }
+
+  .nav-links {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.98);
+    backdrop-filter: blur(5px);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+    /* Sembunyikan menu mobile secara default */
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+  }
+
+  .nav-links.active {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .nav-links a {
+    font-size: 1.5rem;
+  }
+}

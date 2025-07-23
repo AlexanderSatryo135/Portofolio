@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alexander Satryo's Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="container">
+      <nav>
+        <a href="#" class="logo">Alexander Satryo.</a>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button id="menu-toggle" class="hamburger-button">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </nav>
+    </header>
+    <main>
+      <section id="hero" class="container">
+        <div class="hero-text">
+          <h1>Welcome! 👋</h1>
+          <h2>I'm Alexander Satryo Pinandhito Yudho Pratomo</h2>
+          <p>
+            An Information Systems student at Institut Teknologi Sepuluh
+            Nopember with a strong interest in entrepreneurship. Excels in time
+            management and is eager to continuously learn and improve by
+            applying acquired knowledge, supported by strong communication
+            skills.
+          </p>
+        </div>
+        <div class="hero-image">
+          <img src="img/gue.jpeg" alt="Foto Alexander Satryo" />
+        </div>
+      </section>
+      <section id="about" class="container cv-section">
+        <h2><i class="fa-solid fa-user"></i> About Me</h2>
+        <p>
+          An Information Systems student at ITS with a strong interest in
+          entrepreneurship. Possesses excellent time management skills and a
+          willingness to continuously learn and improve by implementing acquired
+          knowledge, supported by good communication abilities.
+        </p>
+        <a href="CV ATS_Alexander Satryo_5026221135.pdf" class="btn" download>
+          <i class="fa-solid fa-download"></i> Download CV
+        </a>
+      </section>
+
+      <section id="experience" class="container cv-section">
+        <h2><i class="fa-solid fa-briefcase"></i> Experience</h2>
+
+        <div class="cv-entry">
+          <img
+            src="img/bi.png"
+            alt="Bank Indonesia Logo"
+            class="experience-logo"
+          />
+          <div class="cv-entry-details">
+            <div class="cv-row">
+              <span class="cv-main-title">Central Bank of Indonesia</span>
+              <span class="cv-location">Surakarta, Central Java</span>
+            </div>
+            <div class="cv-row">
+              <span class="cv-sub-title">Unit Management Intern</span>
+              <span class="cv-dates">July 2025 (1 Month)</span>
+            </div>
+            <ul>
+              <li>
+                Managed and systematically archived important documents (both
+                physical & digital) to ensure easy access, in accordance with
+                Bank Indonesia standards.
+              </li>
+              <li>
+                Performed verification and quality control on printed documents
+                to guarantee data accuracy.
+              </li>
+              <li>
+                Supported team efficiency by organizing a clear and structured
+                document distribution workflow.
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="cv-entry">
+          <img
+            src="img/ilits.png"
+            alt="Ini Lho ITS! Logo"
+            class="experience-logo"
+          />
+          <div class="cv-entry-details">
+            <div class="cv-row">
+              <span class="cv-main-title">Ini Lho ITS!</span>
+              <span class="cv-location">Surakarta, Central Java</span>
+            </div>
+
+            <div class="cv-row">
+              <span class="cv-sub-title">Operational Staff</span>
+              <span class="cv-dates">Dec 2024 - Jan 2025</span>
+            </div>
+            <ul>
+              <li>
+                Coordinated the logistical requirements and prepared all
+                necessary equipment for two key event segments: 'Visit ILITS'
+                and the 'Try Out Welcome Sepuluh Nopember'.
+              </li>
+              <li>
+                Provided operational support to ensure the seamless execution of
+                event activities for all participants.
+              </li>
+              <li>
+                Played an active role in troubleshooting operational issues,
+                ensuring the whole event was a success from start to finish.
+              </li>
+            </ul>
+
+            <div class="cv-row" style="margin-top: 1.2rem">
+              <span class="cv-sub-title">IT Staff</span>
+              <span class="cv-dates">Dec 2024 - Jan 2025</span>
+            </div>
+            <ul>
+              <li>
+                Proactively assisted participants with pre-event device checks
+                to ensure they were ready for the online test.
+              </li>
+              <li>
+                Served as the go-to technical support during the Try Out,
+                helping participants solve any issues that came up with their
+                connection or devices.
+              </li>
+              <li>
+                Monitored network connectivity throughout the session to
+                maintain a stable and reliable testing environment for all
+                users.
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="cv-entry">
+          <img src="img/hmsi.png" alt="HMSI ITS Logo" class="experience-logo" />
+          <div class="cv-entry-details">
+            <div class="cv-row">
+              <span class="cv-main-title">HMSI ITS</span>
+              <span class="cv-location">Surabaya, East Java</span>
+            </div>
+            <div class="cv-row">
+              <span class="cv-sub-title"
+                >Member of Entrepreneurship - Internship</span
+              >
+              <span class="cv-dates">Jul 2023 - Oct 2023</span>
+            </div>
+            <ul>
+              <li>
+                Managed and compiled student data for the Information Systems
+                Department to support the division's strategic initiatives.
+              </li>
+              <li>
+                Actively collaborated with team members in regular meetings to
+                identify challenges, brainstorm solutions, and plan project next
+                steps.
+              </li>
+              <li>
+                Executing the "Hello Expert" interview event, from the planning
+                stages through to successful delivery.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section id="education" class="container cv-section">
+        <h2><i class="fa-solid fa-graduation-cap"></i> Education</h2>
+        <div class="cv-entry">
+          <img src="img/its.png" alt="ITS Logo" class="experience-logo" />
+          <div class="cv-entry-details">
+            <div class="cv-row">
+              <span class="cv-main-title"
+                >Institut Teknologi Sepuluh Nopember</span
+              >
+              <span class="cv-location">Surabaya, East Java</span>
+            </div>
+            <div class="cv-row">
+              <span class="cv-sub-title">Information Systems</span>
+              <span class="cv-dates">2022 – Now</span>
+            </div>
+          </div>
+        </div>
+        <div class="cv-entry">
+          <img
+            src="img/smansa.png"
+            alt="SMA 1 Surakarta Logo"
+            class="experience-logo"
+          />
+          <div class="cv-entry-details">
+            <div class="cv-row">
+              <span class="cv-main-title">SMA Negeri 1 Surakarta</span>
+              <span class="cv-location">Surakarta, Central Java</span>
+            </div>
+            <div class="cv-row">
+              <span class="cv-sub-title">MIPA</span>
+              <span class="cv-dates">2019 – 2022</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="projects" class="container">
+        <h2><i class="fa-solid fa-lightbulb"></i> Projects</h2>
+        <div class="swiper project-carousel">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="project-card">
+                <img src="img/project1.png" alt="Project Thumbnail" />
+                <h3>All - in - One PDF Toolkit</h3>
+                <p>
+                  A versatile web application for all your PDF needs. Merge,
+                  Compress, and Convert PDF files easily and quickly, right from
+                  your browser.
+                </p>
+
+                <div class="project-card-buttons">
+                  <a
+                    href="https://github.com/AlexanderSatryo135/merge-pdf"
+                    class="btn"
+                    target="_blank"
+                  >
+                    <i class="fa-brands fa-github"></i> GitHub
+                  </a>
+                  <a
+                    href="https://merge-pdf-psi.vercel.app/"
+                    class="btn"
+                    target="_blank"
+                  >
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i> Live
+                    Demo
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="project-card">
+                <img src="img/project2.png" alt="Project Thumbnail" />
+                <h3>PrayTimeNow</h3>
+                <p>
+                  A simple web app for daily prayer times. Instantly get
+                  schedules by city and date—no login, installation, or GPS
+                  needed. Developed with Laravel and Bootstrap, and
+                  automatically deployed via a GitHub Actions and Docker CI/CD
+                  pipeline.
+                </p>
+
+                <div class="project-card-buttons">
+                  <a
+                    href="https://github.com/AlexanderSatryo135/PrayTimeNow-main"
+                    class="btn"
+                    target="_blank"
+                  >
+                    <i class="fa-brands fa-github"></i> GitHub
+                  </a>
+                  <a
+                    href="https://praytimenow.onrender.com/"
+                    class="btn"
+                    target="_blank"
+                  >
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i> Live
+                    Demo
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="project-card">
+                <img src="img/project3.png" alt="Project Thumbnail" />
+                <h3>Face Recognition</h3>
+                <p>
+                  A face recognition system capable of detecting and identifying
+                  individuals from an image or video stream. Built with Python
+                  using popular libraries like OpenCV.
+                </p>
+
+                <div class="project-card-buttons">
+                  <a
+                    href="https://github.com/AlexanderSatryo135/Face-Recognition"
+                    class="btn"
+                    target="_blank"
+                  >
+                    <i class="fa-brands fa-github"></i> GitHub
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="project-card">
+                <img src="img/project4.png" alt="Project Thumbnail" />
+                <h3>Jelajahin Apps</h3>
+                <p>
+                  Jelajahin is a mobile app for travel lovers, built with
+                  Flutter. Users can share destinations, explore new places, and
+                  interact with posts by liking, commenting, and saving their
+                  favorites.
+                </p>
+                <div class="project-card-buttons">
+                  <a
+                    href="https://github.com/AlexanderSatryo135/jelajahin-apps-main"
+                    class="btn"
+                    target="_blank"
+                  >
+                    <i class="fa-brands fa-github"></i> GitHub
+                  </a>
+                  <a
+                    href="https://praytimenow.onrender.com/"
+                    class="btn"
+                    target="_blank"
+                  >
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i> Live
+                    Demo
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="project-card">
+                <img
+                  src="https://via.placeholder.com/400x250/e74c3c/ffffff?text=Project+3"
+                  alt="Project Thumbnail"
+                />
+                <h3>Project 5</h3>
+                <p>Desc.</p>
+
+                <div class="project-card-buttons">
+                  <a
+                    href="https://github.com/AlexanderSatryo135/PrayTimeNow-main"
+                    class="btn"
+                    target="_blank"
+                  >
+                    <i class="fa-brands fa-github"></i> GitHub
+                  </a>
+                  <a
+                    href="https://praytimenow.onrender.com/"
+                    class="btn"
+                    target="_blank"
+                  >
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i> Live
+                    Demo
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="project-card">
+                <img
+                  src="https://via.placeholder.com/400x250/e74c3c/ffffff?text=Project+3"
+                  alt="Project Thumbnail"
+                />
+                <h3>Project 6</h3>
+                <p>Desc.</p>
+
+                <div class="project-card-buttons">
+                  <a
+                    href="https://github.com/AlexanderSatryo135/PrayTimeNow-main"
+                    class="btn"
+                    target="_blank"
+                  >
+                    <i class="fa-brands fa-github"></i> GitHub
+                  </a>
+                  <a
+                    href="https://praytimenow.onrender.com/"
+                    class="btn"
+                    target="_blank"
+                  >
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i> Live
+                    Demo
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+    </main>
+    <footer id="contact" class="container">
+      <h2>Get In Touch</h2>
+      <p>Feel free to reach out to me through any of the platforms below.</p>
+      <div class="social-links">
+        <a
+          href="https://www.linkedin.com/in/alexandersatryop/"
+          target="_blank"
+          aria-label="LinkedIn"
+          ><i class="fa-brands fa-linkedin"></i
+        ></a>
+        <a
+          href="https://github.com/AlexanderSatryo135"
+          target="_blank"
+          aria-label="GitHub"
+          ><i class="fa-brands fa-github"></i
+        ></a>
+        <a
+          href="https://www.instagram.com/alexandersatryoo/"
+          target="_blank"
+          aria-label="Instagram"
+          ><i class="fa-brands fa-instagram"></i
+        ></a>
+        <a
+          href="https://wa.me/6282136934584"
+          target="_blank"
+          aria-label="WhatsApp"
+          ><i class="fa-brands fa-whatsapp"></i
+        ></a>
+        <a
+          href="https://mail.google.com/mail/?view=cm&fs=1&to=dhitoalex123@gmail.com"
+          target="_blank"
+          aria-label="Email"
+          ><i class="fa-solid fa-envelope"></i>
+        </a>
+      </div>
+      <p class="copyright">
+        &copy; 2025 Alexander Satryo. All Rights Reserved.
+      </p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper(".project-carousel", {
+        loop: true,
+        centeredSlides: true,
+        slidesPerView: 1,
+        spaceBetween: 30,
+        breakpoints: {
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 30,
+          },
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+          },
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        initialSlide: 1, // Memulai dari slide kedua (indeks 1) agar terlihat di tengah
+      });
+    </script>
+  </body>
+</html>
